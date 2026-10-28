@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#121117">
+    <meta name="description" content="تعلّم علوم الحاسب خطوة بخطوة، واختبر فهمك قبل الانتقال إلى الدرس التالي.">
+    <title>علوم الحاسب — تعلّم خطوة بخطوة</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar">
+        <div class="brand" aria-label="علوم الحاسب">
+          <div class="brand-mark" aria-hidden="true">ع</div>
+          <div class="brand-copy">
+            <span class="brand-name">علوم الحاسب</span>
+            <span class="brand-caption">تعلّم. جرّب. افهم.</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="welcome">
+          <div>
+            <p class="welcome-copy">شاهد درسًا قصيرًا، ثم أثبت فهمك بسؤال وراء سؤال. لا انتقال قبل أن تصبح الفكرة لك فعلًا.</p>
+            <div class="welcome-actions">
+              <button class="button-primary" id="start-learning" type="button">
+                ابدأ من الدرس الأول
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16 10H4m0 0 5-5m-5 5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+          <aside class="journey-card" aria-label="ملخص التقدم">
+            <span class="journey-label">تقدّمك في المسار</span>
+            <div class="journey-data">
+              <div class="journey-ring" id="journey-ring"><span id="journey-percent">0٪</span></div>
+              <div class="journey-count">
+                <strong id="journey-count">0 من 2</strong>
+                <span>درسان متاحان حاليًا</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section aria-labelledby="path-title">
+          <div class="section-heading">
+            <div>
+              <h2 id="path-title">مسارك في التعلّم</h2>
+              <p>كل إجابة صحيحة تقرّبك من الفكرة التالية.</p>
+            </div>
+            <span class="unit-label">الوحدة الأولى &nbsp;·&nbsp; الأساسيات</span>
+          </div>
+
+          <div class="learning-layout" id="learning-layout">
+            <article class="lesson-panel" id="lesson-workspace" aria-live="polite"></article>
+
+            <aside class="roadmap" aria-label="قائمة الدروس">
+              <div class="roadmap-title">
+                <h2>خريطة الدروس</h2>
+                <span>الوحدة ١</span>
+              </div>
+              <div class="roadmap-list" id="roadmap-list"></div>
+              <div class="roadmap-note" id="roadmap-note">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.8v7.6m0 3.4v.1M17.1 10a7.1 7.1 0 1 1-14.2 0 7.1 7.1 0 0 1 14.2 0Z" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                <p>أجب عن أسئلة الدرس الأول بشكل صحيح لفتح درس النظام الثنائي.</p>
+              </div>
+              <div class="roadmap-divider"></div>
+              <p class="roadmap-subtitle">في الطريق</p>
+              <div class="roadmap-list" id="future-lessons"></div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
